@@ -1,0 +1,65 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+
+
+  <div class="background" >
+    <div style="height: 60px;">
+      <button style="background: transparent ; color:transparent;height: 160px;width: 150px"  (click)="options()" round>Light Round
+      </button>
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col style="    margin-left: 60px;text-align: left; padding-top: 40px;">
+          <img  src="assets/imgs/logo.png">
+        </ion-col>
+        <ion-col style="margin-right: 60px; text-align: right; padding-top: 40px;">
+          <img  src="assets/imgs/logo 02.png">
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col style="text-align:center;padding-top: 40px">
+          <img  src="assets/imgs/text.png">
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row style="margin-left: 10%; margin-right: 10%;">
+        <ion-col style="padding:0px" >
+          <p class="name_text">Name</p>
+          <div class="name_input">
+            <ion-input class="my_text_field"  name= "name" [(ngModel)]="name" style="padding-left: 5px;height: 100%;width: 100%;font-size: 23px;" placeholder="Name"></ion-input>
+          </div>
+        </ion-col>
+
+        <ion-col padding-left="5px" >
+          <p class="email_text">Email Address</p>
+          <div class="email_input">
+            <ion-input class="my_text_field"  name= "email" [(ngModel)]="email" style="padding-left: 5px;height: 100%;width: 100%;font-size: 23px;" placeholder="Email"></ion-input>
+          </div>
+        </ion-col>
+
+      </ion-row>
+      <ion-row style="text-align: match-parent">
+      <div class="button_div">
+        <button style="padding: 0;border: none;background: none;" (click)="nextPage()">
+          <img class="camera_button"  src="assets/imgs/button.png">
+        </button>
+      </div>
+
+      </ion-row>
+     </ion-grid>
+
+     <!--<ion-grid>-->
+
+    <!--</ion-grid>-->
+
+  </div>
+
