@@ -69,7 +69,7 @@ export class HomePage {
 
   initTimer() {
     //Timer for 20 secs
-    if (!this.timeInSeconds) { this.timeInSeconds = this.timer; }
+    if (!this.timeInSeconds) { this.timeInSeconds = 10; }
 
     this.time = this.timeInSeconds;
     this.runTimer = false;

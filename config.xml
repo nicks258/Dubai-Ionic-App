@@ -92,5 +92,7 @@
     <allow-navigation href="http://192.168.2.9:8101" />
     <allow-navigation href="http://192.168.2.9:8102" />
     <allow-navigation href="http://192.168.2.9:8100" />
+    <allow-navigation href="http://192.168.2.8:8101" />
+    <plugin name="cordova-plugin-screen-orientation" spec="^3.0.1" />
     <engine name="ios" spec="4.5.4" />
 </widget>

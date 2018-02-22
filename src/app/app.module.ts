@@ -16,6 +16,7 @@ import {NativeStorage} from "@ionic-native/native-storage";
 import {LoginPage} from "../pages/login/login";
 import {PreviewPage} from "../pages/preview/preview";
 import {OptionPage} from "../pages/option/option";
+import {ScreenOrientation} from "@ionic-native/screen-orientation";
 @NgModule({
   declarations: [
     MyApp,
@@ -46,6 +47,7 @@ import {OptionPage} from "../pages/option/option";
     SplashScreen,
     CameraPreview,
     HttpModule,
+    ScreenOrientation,
     NativeStorage,
     SQLitePorter,
     SQLite,
