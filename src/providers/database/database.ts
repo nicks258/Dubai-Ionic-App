@@ -16,7 +16,7 @@ export class DatabaseProvider {
     this.databaseReady = new BehaviorSubject(false);
     this.platform.ready().then(() => {
       this.sqlite.create({
-        name: 'people.db',
+        name: 'kiosk.db',
         location: 'default'
       })
         .then((db: SQLiteObject) => {
@@ -33,7 +33,7 @@ export class DatabaseProvider {
   }
 
   fillDatabase() {
-    this.http.get('assets/dummyDump.sql')
+    this.http.get('assets/kiosk.sql')
       .map(res => res.text())
       .subscribe(sql => {
         this.sqlitePorter.importSqlToDb(this.database, sql)
@@ -45,9 +45,19 @@ export class DatabaseProvider {
       });
   }
 
-  addDeveloper(name,email,image,click_time) {
-    let data = [name,email,image,click_time];
-    return this.database.executeSql("INSERT INTO people (name,email,image,click_time) VALUES (?, ? , ?, ? )", data).then(data => {
+  addDeveloper(name,email,image,click_time,location) {
+    let data = [name,email,image,click_time,location];
+    return this.database.executeSql("INSERT INTO people (name,email,image,click_time,location) VALUES (?, ? , ?, ? ,?)", data).then(data => {
+      return data;
+    }, err => {
+      console.log('Error: ', err);
+      return err;
+    });
+  }
+
+  updateLocation(place) {
+    let data = [place];
+    return this.database.executeSql('UPDATE place SET place = ? WHERE id = ?',[place,1]).then(data => {
       return data;
     }, err => {
       console.log('Error: ', err);
@@ -64,6 +74,7 @@ export class DatabaseProvider {
         for (var i = 0; i < data.rows.length; i++) {
           developers.push({
             name: data.rows.item(i).name,
+            employee_id: data.rows.item(i).employee_id,
             email: data.rows.item(i).email,
             image: data.rows.item(i).image,
             click_time: data.rows.item(i).click_time,
@@ -71,6 +82,25 @@ export class DatabaseProvider {
         }
       }
       return developers;
+    }, err => {
+      console.log('Error: ', err);
+      return [];
+    });
+  }
+
+  getLocation() {
+    let place;
+    return this.database.executeSql("SELECT * FROM place", []).then((data) => {
+      let developers = [];
+      if (data.rows.length > 0) {
+        place = data.rows.item(0).place
+        // for (var i = 0; i < data.rows.length; i++) {
+        //   developers.push({
+        //     location: data.rows.item(i).location,
+        //   });
+        // }
+      }
+      return place;
     }, err => {
       console.log('Error: ', err);
       return [];

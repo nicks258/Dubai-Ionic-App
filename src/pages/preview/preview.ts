@@ -56,7 +56,7 @@ export class PreviewPage {
     //TODO Code for inserting in sqlite
     this.date1 =   this.date.getFullYear()+'-' + (this.date.getMonth()+1) + '-'+this.date.getDate() + '-' + this.date.getHours() + '-' + this.date.getMinutes() + '-' + this.date.getSeconds();
     console.log("time" + this.date1);
-    this.databaseprovider.addDeveloper(this.name,this.email,this.baseImageString,this.date1)
+    this.databaseprovider.addDeveloper(this.name,this.email,this.baseImageString,this.date1,"Dubai Police photo booth")
       .then(data => {
         this.sendImagesToServer();
       });

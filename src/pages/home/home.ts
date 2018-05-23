@@ -126,10 +126,10 @@ export class HomePage {
     {
       this.show = false;
     }
-    else if(parseInt(secondsString)==4)
-    {
-      this.show = false;
-    }
+    // else if(parseInt(secondsString)==4)
+    // {
+    //   this.show = false;
+    // }
     else {
       this.show = true;
     }

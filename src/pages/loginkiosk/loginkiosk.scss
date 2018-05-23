@@ -1,0 +1,198 @@
+page-loginkiosk {
+
+
+  html,body,.container-fluid
+  {
+    height: 100%;
+    width: 100%;
+  }
+
+  .background{
+    background: url("../assets/imgs/photobooth_bg_01.png") no-repeat center center;
+    background-size: 100% 100%;;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+  }
+  .scroll-content
+  {
+    overflow-x: unset;
+    overflow-y: unset;
+  }
+  .input-group-addon {
+    margin-left: -90px;
+    color: #666;
+    position: absolute;
+    bottom: 32%;
+    font-size: 21px;
+    width: 49%;
+    left: 55%;
+    position: absolute;
+    border-radius: 10px;
+    padding: 0px 40px;
+  }
+  #userEmail {
+
+    position: absolute;
+    position: absolute;
+    bottom: 32%;
+    font-size: 21px;
+    width: 30%;
+    left: 25%;
+
+    border-radius: 10px;
+    padding: 0px 40px;
+  }
+  .email_back{
+    position: absolute;
+    bottom: 32%;
+    font-size: 21px;
+    width: 49%;
+    left: 55%;
+    position: absolute;
+    border-radius: 10px;
+    padding: 0px 40px;
+  }
+  .btn-primary {
+    color: #cc3a00;
+    background-color: #ffffff;
+    position: absolute;
+    border: 1px solid #ffffff;
+    border-bottom: none;
+    font-size: 40px;
+    border-right: none;
+    padding: 16px 40px;
+    bottom: 12%;
+    left: 40%;
+    border-radius: 10px;
+  }
+  //img
+  //{
+  //  margin: auto;
+  //  height: 1150px!important;
+  //  margin-top: 25px;
+  //}
+  .center_image{
+    height: 1025px !important;
+    display: block;
+    margin: 27% auto;
+  }
+  .name,.email,.employee_id
+  {
+    position: absolute;
+  }
+  input::placeholder
+  {
+    color: black;
+  }
+  .name{
+    bottom: 36%;
+    font-size: 40px;
+    left: 23%;
+    border-radius: 40px;
+    padding: 16px 40px;
+  }
+  .email
+  {
+    bottom: 31%;
+    font-size: 35px;
+    width: 49%;
+    left: 26%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0px 40px;
+  }
+
+  .employee_id
+  {
+    bottom: 24%;
+    font-size: 35px;
+    width: 49%;
+    left: 26%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0px 40px;
+  }
+  @media  (max-width: 1024px)
+  {
+    .top p {
+      font-size: 50px;
+      color: #9817e2;
+      margin-left: 80px;
+      margin-top: 16px;
+    }
+
+  }
+  @media (max-width: 768px)
+  {
+    .center_image {
+      height: 730px !important;
+      display: block;
+      margin: 30% auto;
+      /* bottom: 8px; */
+    }
+
+    .top p {
+      font-size: 36px;
+      color: #9817e2;
+      margin-left: 80px;
+      margin-top: 16px;
+    }
+
+    .name{
+      bottom: 36%;
+      font-size: 28px;
+      left: 25%;
+      border-radius: 40px;
+      padding: 10px 30px;
+    }
+    .email_back{
+      position: absolute;
+      bottom: 33%;
+      font-size: 16px;
+      width: 49%;
+      left: 51%;
+      position: absolute;
+      border-radius: 10px;
+      padding: 0px 40px;
+    }
+    .input-group-addon {
+      margin-left: -90px;
+      color: #666;
+    }
+    #userEmail {
+      padding-right: 85px;
+    }
+    .email
+    {
+      bottom: 31%;
+      font-size: 24px;
+      left: 27%;
+      width: 46%;
+      border-radius: 10px;
+      padding: 0px 30px;
+    }
+    .employee_id
+    {
+      bottom: 23%;
+      font-size: 24px;
+      left: 27%;
+      width: 46%;
+      border-radius: 10px;
+      padding: 0px 30px;
+    }
+    .btn-primary {
+      color: #cc3a00;
+      background-color: #ffffff;
+      position: absolute;
+      border: 1px solid #ffffff;
+      border-bottom: none;
+      font-size: 30px;
+      border-right: none;
+      padding: 10px 30px;
+      bottom: 13%;
+      bottom: 13%;
+      left: 40%;
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+page-disclamer {
+  html,body,.container-fluid
+  {
+    height: 100%;
+    width: 100%;
+  }
+  .back
+  {
+    background-image: url('0033.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .women_logo{
+    margin-top: 0px;display: block;
+    height: 300px;
+  }
+
+  /*	p {
+      font-size: 50px;
+      color: #9817e2;
+      margin-left: 80px;
+      margin-top: 16px;
+      font-weight: bold;
+  }*/
+  .btn-default {
+    color: #cc3a00;
+    background-color: #eeaa55;
+    position: absolute;
+    border: 5px solid #cc3a00;
+    border-bottom: none;
+    font-size: 40px;
+    border-right: none;
+    padding: 16px 40px;
+    bottom: 80px;
+    left: 28%;
+    border-radius: 12px;
+  }
+  img
+  {
+    margin: auto;
+  }
+  @media  (max-width: 1024px)
+  {
+    .top p {
+      font-size: 50px;
+      color: #9817e2;
+      margin-left: 80px;
+      margin-top: 16px;
+      font-weight: bold;
+    }
+    p
+    {
+      color: #9817e2;
+      font-size:26px;
+    }
+    .second_text p{
+      margin: 10px 0;
+    }
+  }
+  @media (max-width: 768px) {
+
+    .top p {
+      font-size: 36px;
+      color: #9817e2;
+      margin-left: 80px;
+      margin-top: 16px;
+      font-weight: bold;
+    }
+    p {
+      color: #9817e2;
+      font-size: 18px;
+    }
+    .btn-default {
+      color: #cc3a00;
+      background-color: #eeaa55;
+      position: absolute;
+      border: 5px solid #cc3a00;
+      border-bottom: none;
+      font-size: 30px;
+      border-right: none;
+      padding: 16px 40px;
+      bottom: 70px;
+      left: 28%;
+      border-radius: 12px;
+    }
+    .second_text p{
+      margin: 10px 0;
+    }
+    .women_logo{
+      margin-top: 0px;display: block;
+      height: 200px;
+    }
+  }
+}

@@ -17,12 +17,23 @@ import {LoginPage} from "../pages/login/login";
 import {PreviewPage} from "../pages/preview/preview";
 import {OptionPage} from "../pages/option/option";
 import {ScreenOrientation} from "@ionic-native/screen-orientation";
+import {FirstPage} from "../pages/first/first";
+import {DisclamerPage} from "../pages/disclamer/disclamer";
+import {LoginkioskPage} from "../pages/loginkiosk/loginkiosk";
+import {CamerakioskPage} from "../pages/camerakiosk/camerakiosk";
+import {PreviewkioskPage} from "../pages/previewkiosk/previewkiosk";
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     PreviewPage,
     OptionPage,
+    FirstPage,
+    PreviewkioskPage,
+    CamerakioskPage,
+    LoginkioskPage,
+    DisclamerPage,
     LoginPage,
     ScreensaverPage,
   ],
@@ -37,9 +48,14 @@ import {ScreenOrientation} from "@ionic-native/screen-orientation";
   entryComponents: [
     MyApp,
     ScreensaverPage,
+    PreviewkioskPage,
     OptionPage,
+    CamerakioskPage,
+    LoginkioskPage,
     LoginPage,
     PreviewPage,
+    DisclamerPage,
+    FirstPage,
     HomePage
   ],
   providers: [
@@ -48,7 +64,7 @@ import {ScreenOrientation} from "@ionic-native/screen-orientation";
     CameraPreview,
     HttpModule,
     ScreenOrientation,
-    NativeStorage,
+
     SQLitePorter,
     SQLite,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

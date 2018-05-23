@@ -11,10 +11,31 @@ page-login {
   .text_image{
     text-align: center;
   }
+  .input-group-addon{
+    background-color: transparent;
+    border-left: 0px solid transparent;
+    bottom: 31%;
+    font-size: 35px;
+    width: 49%;
+    left: 26%;
+    position: absolute;
+    border-radius: 10px;
+    padding: 0px 40px;
+  }
   .name_input {
     background-color: #e2e2e2;
     //height: 51px;
     //width: 281px;
+  }
+  .email_back{
+    position: absolute;
+    bottom: 32%;
+    font-size: 21px;
+    width: 49%;
+    left: 55%;
+    position: absolute;
+    border-radius: 10px;
+    padding: 0px 40px;
   }
   .email_input {
     background-color: #e2e2e2;

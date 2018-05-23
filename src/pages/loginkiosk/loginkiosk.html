@@ -1,0 +1,41 @@
+<!--
+  Generated template for the LoginkioskPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content class="background" no-bounce>
+
+  <!--<img src="assets/imgs/culture_logo.png" style="margin-top: 30px;display: block;margin: auto">-->
+  <button style="    bottom: 80%;
+    margin-left: 33%;
+    background: transparent;
+    color: transparent;
+    height: 160px;
+    width: 275px;
+    position: absolute;
+    top: 0px;
+    left: 0px;"  (click)="options()" round>Light Round
+  </button>
+    <div class="row" >
+      <img  src="assets/imgs/login_form.png"  class="img-responsive center_image">
+      <!--<div class="col-lg-8 input-group" style="width:50%">-->
+        <!--<input type="text" id="userEmail" class="form-control" name="email" required />-->
+       <!---->
+        <!--<span class="input-group-addon">@gmail.com</span>-->
+
+      <!--</div>-->
+      <ion-input class="email" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" type="email" [(ngModel)]="email" name="email" placeholder="E-mail ID">
+      </ion-input>
+      <span class="email_back"> @accenture.com</span>
+      <ion-input class="employee_id" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"  [(ngModel)]="employee_id" name="employee_id" placeholder="EMPLOYEE ID">
+      </ion-input>
+
+
+      <button class="btn btn-primary" (click)="nextPage()">SUBMIT</button>
+    </div>
+
+</ion-content>

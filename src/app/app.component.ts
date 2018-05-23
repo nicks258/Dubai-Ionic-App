@@ -7,11 +7,16 @@ import { HomePage } from '../pages/home/home';
 import {LoginPage} from "../pages/login/login";
 import {PreviewPage} from "../pages/preview/preview";
 import {ScreenOrientation} from "@ionic-native/screen-orientation";
+import {FirstPage} from "../pages/first/first";
+import {DisclamerPage} from "../pages/disclamer/disclamer";
+import {LoginkioskPage} from "../pages/loginkiosk/loginkiosk";
+import {CamerakioskPage} from "../pages/camerakiosk/camerakiosk";
+import {PreviewkioskPage} from "../pages/previewkiosk/previewkiosk";
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = ScreensaverPage;
+  rootPage:any = LoginkioskPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,public screenOrientation:ScreenOrientation) {
     platform.ready().then(() => {

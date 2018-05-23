@@ -1,0 +1,67 @@
+page-camerakiosk {
+  .background-camera{
+    background: url("../assets/imgs/photobooth_bg_02.png") no-repeat center center;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-color: #ffffff;
+    background-attachment: fixed;
+  }
+  .frame {
+    margin-left: 121px;
+    margin-top: 9px;
+    height: 69%;
+    position: absolute;
+  }
+  .countdownback{
+    height: 29%;
+    position: absolute;
+    margin-top: 26%;
+    margin-left: 29%;
+  }
+  .timer{
+    font-size: 120px;
+    color: #8A2DDB;
+    margin-top: 22%;
+    margin-left: 7px;
+  }
+  .welcome {
+
+    margin-top: 40%;
+    margin-left: 29%;
+    position: fixed;
+    font-size: 42px;
+    color: #18165A;
+
+  }
+  .counter_div{
+
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    margin: 50% 38%;
+    padding: 40px;
+  }
+  @media (max-width: 768px)
+  {
+    .counter_div{
+
+      height: 250px;
+      width: 250px;
+      position: absolute;
+      margin: 46% 34%;
+      padding: 40px;
+    }
+    .timer{
+      font-size: 90px;
+      color: #8A2DDB;
+      margin-top: 22%;
+      margin-left: 7px;
+    }
+  }
+}
+html, body, ion-app, ion-content, ion-page, .nav-decor {
+  background-color: transparent !important;
+}
+
+
+
